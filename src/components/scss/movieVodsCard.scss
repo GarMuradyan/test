@@ -1,0 +1,48 @@
+.movie-vods-content {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    height: 310px;
+
+    .movie-vods-content-list {
+        display: flex;
+        transition: 0.3s;
+        position: relative;
+        height: 100%;
+    }
+}
+
+.movie-vods-card {
+    width: 180px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    height: 310px;
+    border: solid 1px transparent;
+    transition: 0.3s linear;
+
+
+    img {
+        border-radius: 10px;
+        height: 270px;
+    }
+
+    .movie-vods-card-title {
+        text-align: center;
+        padding: 5px;
+
+        span {
+            color: white;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            
+        }
+    }
+
+}
+
+.movie-vods-card.active {
+    border-color: white;
+}
